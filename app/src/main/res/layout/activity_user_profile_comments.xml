@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_profile_comment_picture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:civ_border_color="@color/redAccent"
+            android:padding="2dp"
+            android:src="@drawable/up"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/user_profile_comment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:minWidth="300dp"
+                android:maxLines="1"
+                android:text="username"
+                android:fontFamily="serif"
+                android:textSize="16dp"
+                android:textColor="@color/darkBlue"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/user_profile_comment_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 june 2020 | 11:10am"
+                android:textColor="#ababab"
+                android:textSize="12dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RatingBar
+        android:id="@+id/user_profile_rating_stars"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:progressTint="#111151"
+        android:rating="0"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:stepSize="0.1" />
+    <TextView
+        android:id="@+id/user_profile_comment_message"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="7dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#111111"
+        android:fontFamily="sans-serif"
+        android:text="display text here......."/>
+</LinearLayout>

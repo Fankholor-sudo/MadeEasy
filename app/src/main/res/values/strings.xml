@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Made Easy</string>
+
+    <string name="login_preference">com.made_easy_login_preference</string>
+    <string name="login_status_preference">com.made_easy_login_status_preference</string>
+    <string name="login_session_user_id">com.made_easy_login_user_id</string>
+
+    <string name="login_session_user_username">com.made_easy_login_user_username</string>
+    <string name="login_session_user_role">com.made_easy_login_user_role</string>
+
+    <string-array name="Spinner_items">
+        <item>Bricklayer</item>
+        <item>Electrician</item>
+        <item>Welder</item>
+        <item>Plumber</item>
+        <item>Personal Trainer</item>
+        <item>Diesel Mechanic</item>
+        <item>Mechanical Filter</item>
+        <item>Carpenter and Joiner</item>
+    </string-array>
+</resources>

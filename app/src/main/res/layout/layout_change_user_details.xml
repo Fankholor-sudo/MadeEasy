@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Details"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="24dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
+            android:textSize="18dp"
+            android:text="username"/>
+        <EditText
+            android:id="@+id/user_profile_edit_name"
+            android:layout_width="match_parent"
+            android:textSize="19dp"
+            android:text="username"
+            android:inputType="textPersonName"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
+            android:textSize="18dp"
+            android:text="city"/>
+        <EditText
+            android:id="@+id/user_profile_edit_city"
+            android:layout_width="match_parent"
+            android:textSize="19dp"
+            android:text="city"
+            android:inputType="textPersonName"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
+            android:textSize="18dp"
+            android:text="phone number"/>
+        <EditText
+            android:id="@+id/user_profile_edit_mobile"
+            android:layout_width="match_parent"
+            android:textSize="19dp"
+            android:text="0000000000"
+            android:maxLength="10"
+            android:inputType="number"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/user_profile_edit_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE DETAILS"
+        android:textColor="#eeeeee"
+        android:layout_margin="10dp"
+        android:background="@drawable/curved_corners_blue"/>
+</LinearLayout>

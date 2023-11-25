@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="24dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-black"/>
+    <RatingBar
+        android:id="@+id/foreign_user_profile_rate_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressTint="@color/appColor"
+        android:rating="0"
+        android:scaleY=".8"
+        android:scaleX=".8"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"/>
+    <EditText
+        android:id="@+id/foreign_user_profile_rate_user_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="type message here..."
+        android:background="@null"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:lines="6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:scrollHorizontally="false"/>
+    <Button
+        android:id="@+id/foreign_user_profile_rate_user_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textColor="#eeeeee"
+        android:layout_margin="10dp"
+        android:background="@drawable/curved_corners_blue"/>
+</LinearLayout>

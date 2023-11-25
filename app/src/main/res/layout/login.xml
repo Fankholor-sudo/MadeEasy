@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    tools:context=".LogIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textSize="62dp"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:textColor="@color/appColor"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="55dp"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:fontFamily="cursive"
+        android:textColor="@color/appColor"
+        android:gravity="center"
+        android:layout_marginBottom="60dp"/>
+
+     <TextView
+         android:id="@+id/errorView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="14dp"
+         android:textFontWeight="700"
+         android:fontFamily="serif"
+         android:text=""
+         android:layout_gravity="center"
+         android:textColor="@color/redAccent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="21dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="21dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Login"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="21dp"
+        android:background="@drawable/curved_corners"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="forgot password?"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:textColor="@color/blueAccent"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@null"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_OR_"
+        android:textSize="16dp"
+        android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="Do not have an account ?"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/black"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Register"
+            android:textSize="15dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:textColor="@color/blueAccent"
+            android:background="@null"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
+
+        <ProgressBar
+            android:id="@+id/login_progress"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            style="?android:progressBarStyleHorizontal"
+            android:indeterminate="true"
+            android:background="@color/appColor"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"/>
+
+    </LinearLayout>
+</ScrollView>

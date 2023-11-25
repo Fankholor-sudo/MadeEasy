@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".ForeignUserProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/foreign_user_profile_picture"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#333333"
+                android:src="@drawable/profile_icon_one"/>
+            <ImageButton
+                android:id="@+id/foreign_user_profile_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_navigate_back"
+                android:background="#A100"
+                android:layout_alignTop="@+id/foreign_user_profile_picture"
+                android:layout_alignLeft="@+id/foreign_user_profile_picture"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#A100"
+                android:layout_alignBottom="@+id/foreign_user_profile_picture"
+                android:layout_alignLeft="@+id/foreign_user_profile_picture">
+
+                <TextView
+                    android:id="@+id/foreign_user_profile_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="username@example"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/foreign_user_profile_skills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/curved_corners_blue"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="serif"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="14dp"
+                    android:text="Programmer \n Charted \n Accountent \n Brick Layer \n Personal Trainer"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/foreign_user_profile_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="example@MadeEasyCity"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="city "
+                    android:textSize="14dp"
+                    android:fontFamily="serif-monospace"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/foreign_user_profile_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="example@mail.com"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="email "
+                    android:textSize="14dp"
+                    android:fontFamily="serif-monospace"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/greyAccent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/foreign_user_profile_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:text="0000000000"
+                        android:maxLength="10"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:textSize="14dp"
+                        android:fontFamily="serif-monospace"
+                        android:text="phone number"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:id="@+id/foreign_user_profile_call"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/curved_corners_blue"
+                        android:src="@drawable/icon_call"
+                        android:layout_gravity="right"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/greyAccent"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/foreign_user_profile_chat_btn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="CHAT"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/curved_corners_blue"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/foreign_user_profile_rating_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/darkBlue"
+                    android:text="rating value"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/darkBlue"/>
+
+            <RatingBar
+                android:id="@+id/foreign_user_profile_showRatings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:isIndicator="true"
+                android:stepSize="0.1"
+                android:numStars="5"
+                android:progressTint="#111151"
+                android:rating="0"
+                android:scaleY=".8"
+                android:scaleX=".8"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/foreign_user_profile_high_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="positive rate"
+                    android:fontFamily="serif-monospace" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#111111"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="|"/>
+                <TextView
+                    android:id="@+id/foreign_user_profile_low_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="negative rate"
+                    android:fontFamily="serif-monospace" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/foreign_user_profile_rate_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rate now"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:background="@drawable/curved_corners_blue"
+                android:layout_marginBottom="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#cfcfcf"/>
+            <ListView
+                android:id="@+id/foreign_user_profile_customers_comments"
+                android:layout_width="match_parent"
+                android:footerDividersEnabled="false"
+                android:layout_height="match_parent" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

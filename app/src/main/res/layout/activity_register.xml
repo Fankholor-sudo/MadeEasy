@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LogIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="55dp"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:fontFamily="cursive"
+        android:textColor="@color/appColor"
+        android:gravity="top"
+        android:layout_marginBottom="25dp"/>
+
+        <ProgressBar
+            android:id="@+id/register_progress"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            style="?android:progressBarStyleHorizontal"
+            android:indeterminate="true"
+            android:background="@color/appColor"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="50dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/register_email"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="21dp"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/register_email_verify"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="Comfirm Email"
+            android:inputType="textEmailAddress"
+            android:textSize="21dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="21dp"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/register_retype_password"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="Comfirm Password"
+            android:inputType="textPassword"
+            android:textSize="21dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="Phone number"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:textSize="21dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/appColor"
+                android:text="Customer"
+                />
+            <TextView
+                android:id="@+id/role_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <CheckBox
+                android:id="@+id/artisan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/appColor"
+                android:text="Artisan"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:text="next"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="21dp"
+        android:background="@drawable/curved_corners"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:text="Already have an account ?"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@color/black"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_login"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Login"
+        android:textSize="16dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:textAllCaps="false"
+        android:textColor="@color/blueAccent"
+        android:background="@null"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center"/>
+    </LinearLayout>
+</ScrollView>
