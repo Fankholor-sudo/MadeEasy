@@ -1,6 +1,6 @@
 # MadeEasy - Android mobile app
 
-#### Created: 2021
+#### Created: 2020
 #### Tech Stack: Android Studio and Java
 
 <!-- TABLE OF CONTENTS -->
